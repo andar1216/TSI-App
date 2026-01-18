@@ -33,7 +33,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
+          title: 'Dashboard',
           tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
           headerRight: () => (
             <Link href="/modal" asChild>
@@ -59,6 +59,15 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <TabBarIcon name="user" color={color} />,
         }}
       />
+      <Tabs.Screen
+  name="timer-form"
+  options={{
+    title: "Timer",
+    tabBarIcon: ({ color }) => (
+      <TabBarIcon name="time" color={color} />
+    ),
+  }}
+/>
     </Tabs>
   );
 }
